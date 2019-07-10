@@ -7,12 +7,13 @@ from hugLogic import *
 import requests
 from bs4 import BeautifulSoup
 from lxml import html 
+import os
 
 dictionary = {}
 
 #global crypto_name
 app = Flask(__name__) 
-port = 5000
+port = int(os.environ["PATH"])
 @app.route('/', methods=['POST'])
 def root():
     data = json.loads(request.get_data())
@@ -235,4 +236,4 @@ def errors():
   print(json.loads(request.get_data())) 
   return jsonify(status=200) 
  
-app.run(port=port)
+app.run(port=port, host="0.0.0.0")
