@@ -39,7 +39,7 @@ pickleshare==0.7.5
 prometheus-client==0.7.1
 prompt-toolkit==2.0.9
 PuLP==1.6.10
-Pygments==2.4.2
+Pygments==2.7.4
 pyhdb==0.3.3
 pyparsing==2.4.0
 pyrsistent==0.15.2
